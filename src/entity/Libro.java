@@ -8,6 +8,8 @@ public class Libro {
     private double precio;
     private int id_autor;
 
+    private Autores objAutor;
+
     //Constructor
     public Libro(int id, String titulo, String año_publicaicon, double precio, int id_autor) {
         this.id = id;
@@ -17,7 +19,9 @@ public class Libro {
         this.id_autor = id_autor;
     }
 
-    //Setter y getter
+    public Libro() {
+    }
+//Setter y getter
 
     public int getId() {
         return id;
@@ -57,6 +61,14 @@ public class Libro {
 
     public void setId_autor(int id_autor) {
         this.id_autor = id_autor;
+    }
+
+    public Autores getObjAutor() {
+        return objAutor;
+    }
+
+    public void setObjAutor(Autores objAutor) {
+        this.objAutor = objAutor;
     }
 
     //toString
